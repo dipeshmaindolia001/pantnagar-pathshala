@@ -9,7 +9,7 @@ const features = [
 
 const steps = [
   { number: "1", title: "Sign Up", description: "Create your free account in seconds", icon: "👤" },
-  { number: "2", title: "Pay via UPI", description: "Quick ₹150 payment with any UPI app", icon: "💳" },
+  { number: "2", title: "Pay via UPI", description: "Quick ₹50 payment with any UPI app", icon: "💳" },
   { number: "3", title: "Get Approved", description: "Admin verifies your payment within hours", icon: "✅" },
   { number: "4", title: "Take Tests", description: "Attempt 3 full mock tests at your pace", icon: "🎯" },
 ];
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="mb-14">
             <h3 className="text-lg font-bold font-heading text-primary-900 text-center mb-6 flex items-center justify-center gap-2">
               <span className="w-8 h-[2px] bg-green-205" />
-              Combined Stream Packages (₹150)
+              Combined Stream Packages (₹50 after discount)
               <span className="w-8 h-[2px] bg-green-205" />
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -125,7 +125,7 @@ export default function Home() {
                       PCB Group
                     </h3>
                     <span className="px-4 py-1.5 rounded-full text-sm font-bold bg-saffron-600 text-white shadow-md animate-pulse-glow">
-                      ₹150
+                      ₹50
                     </span>
                   </div>
                   <p className="text-gray-600 font-body mb-6">
@@ -165,7 +165,7 @@ export default function Home() {
                       PCM Group
                     </h3>
                     <span className="px-4 py-1.5 rounded-full text-sm font-bold bg-saffron-600 text-white shadow-md animate-pulse-glow">
-                      ₹150
+                      ₹50
                     </span>
                   </div>
                   <p className="text-gray-600 font-body mb-6">
@@ -202,7 +202,7 @@ export default function Home() {
           <div>
             <h3 className="text-lg font-bold font-heading text-primary-900 text-center mb-6 flex items-center justify-center gap-2">
               <span className="w-8 h-[2px] bg-saffron-205" />
-              Targeted Single Subject Packages (₹100)
+              Targeted Single Subject Packages (₹50 after discount)
               <span className="w-8 h-[2px] bg-saffron-205" />
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -215,7 +215,7 @@ export default function Home() {
                       🌿 Biology
                     </h4>
                     <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-saffron-600 text-white shadow-sm">
-                      ₹100
+                      ₹50
                     </span>
                   </div>
                   <p className="text-sm text-gray-600 font-body mb-5">
@@ -253,7 +253,7 @@ export default function Home() {
                       🧪 Chemistry
                     </h4>
                     <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-saffron-600 text-white shadow-sm">
-                      ₹100
+                      ₹50
                     </span>
                   </div>
                   <p className="text-sm text-gray-600 font-body mb-5">
@@ -291,7 +291,7 @@ export default function Home() {
                       ⚡ Physics
                     </h4>
                     <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-saffron-600 text-white shadow-sm">
-                      ₹100
+                      ₹50
                     </span>
                   </div>
                   <p className="text-sm text-gray-600 font-body mb-5">
