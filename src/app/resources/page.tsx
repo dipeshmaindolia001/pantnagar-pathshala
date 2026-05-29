@@ -1,16 +1,8 @@
-import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
 import { db } from "@/db";
 import { resources } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
 export default async function ResourcesPage() {
-  const { userId } = await auth();
-
-  // If not signed in, clerkMiddleware should intercept but just in case:
-  if (!userId) {
-    redirect("/sign-in");
-  }
 
   // Fetch free resources directly in Server Component
   const allResources = await db
