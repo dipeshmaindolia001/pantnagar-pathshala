@@ -2,6 +2,8 @@ import { db } from "@/db";
 import { resources } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ResourcesPage() {
 
   // Fetch free resources directly in Server Component
