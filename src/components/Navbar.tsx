@@ -9,36 +9,51 @@ export default function Navbar() {
   const { isSignedIn, isLoaded } = useAuth();
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-white/40 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          {/* Brand */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-xl sm:text-2xl font-extrabold font-heading gradient-text">
-              Pantnagar Mock Tests
-            </span>
+            <span className="text-2xl">🌱</span>
+            <div className="flex flex-col leading-none">
+              <span className="text-lg sm:text-xl font-extrabold font-heading gradient-text tracking-tight">
+                Pantnagar Pathshala
+              </span>
+              <span className="text-[10px] text-gray-400 font-body hidden sm:block">
+                Learn • Practice • Crack Pantnagar
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3">
             {isLoaded && (
-              <Link
-                href="/resources"
-                className="px-5 py-2 rounded-lg text-sm font-semibold text-primary-900 border border-primary-800 hover:bg-primary-50 transition-colors duration-200"
-              >
-                📚 Free Resources
-              </Link>
+              <>
+                <Link
+                  href="/resources"
+                  className="px-4 py-2 rounded-lg text-sm font-semibold text-primary-800 hover:bg-primary-50 transition-colors duration-200"
+                >
+                  📚 Free Resources
+                </Link>
+                <Link
+                  href="/mentorship"
+                  className="px-4 py-2 rounded-lg text-sm font-semibold text-primary-800 hover:bg-primary-50 transition-colors duration-200"
+                >
+                  🎯 Mentorship
+                </Link>
+              </>
             )}
             {isLoaded && !isSignedIn && (
               <>
                 <Link
                   href="/sign-in"
-                  className="px-5 py-2 rounded-lg text-sm font-semibold text-primary-900 border border-primary-800 hover:bg-primary-50 transition-colors duration-200"
+                  className="px-4 py-2 rounded-lg text-sm font-semibold text-primary-900 border border-primary-800 hover:bg-primary-50 transition-colors duration-200"
                 >
                   Sign In
                 </Link>
                 <Link
                   href="/sign-up"
-                  className="px-5 py-2 rounded-lg text-sm font-semibold text-white bg-primary-800 hover:bg-primary-900 transition-colors duration-200 shadow-md"
+                  className="px-4 py-2 rounded-lg text-sm font-semibold text-white bg-primary-800 hover:bg-primary-900 transition-colors duration-200 shadow-md"
                 >
                   Sign Up
                 </Link>
@@ -48,7 +63,7 @@ export default function Navbar() {
               <>
                 <Link
                   href="/dashboard"
-                  className="px-5 py-2 rounded-lg text-sm font-semibold text-white bg-primary-800 hover:bg-primary-900 transition-colors duration-200 shadow-md"
+                  className="px-4 py-2 rounded-lg text-sm font-semibold text-white bg-primary-800 hover:bg-primary-900 transition-colors duration-200 shadow-md"
                 >
                   Dashboard
                 </Link>
@@ -81,18 +96,27 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          mobileOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+          mobileOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-4 pb-4 pt-2 space-y-2 border-t border-gray-100">
           {isLoaded && (
-            <Link
-              href="/resources"
-              onClick={() => setMobileOpen(false)}
-              className="block w-full text-center px-4 py-2.5 rounded-lg text-sm font-semibold text-primary-900 border border-primary-800 hover:bg-primary-50 transition-colors"
-            >
-              📚 Free Resources
-            </Link>
+            <>
+              <Link
+                href="/resources"
+                onClick={() => setMobileOpen(false)}
+                className="block w-full text-center px-4 py-2.5 rounded-lg text-sm font-semibold text-primary-900 border border-primary-800 hover:bg-primary-50 transition-colors"
+              >
+                📚 Free Resources
+              </Link>
+              <Link
+                href="/mentorship"
+                onClick={() => setMobileOpen(false)}
+                className="block w-full text-center px-4 py-2.5 rounded-lg text-sm font-semibold text-primary-900 border border-primary-800 hover:bg-primary-50 transition-colors"
+              >
+                🎯 Mentorship
+              </Link>
+            </>
           )}
           {isLoaded && !isSignedIn && (
             <>
