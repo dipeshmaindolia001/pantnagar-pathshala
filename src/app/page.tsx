@@ -271,6 +271,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── SECTION 5 (moved): TESTIMONIALS ─────────────────────── */}
+      <section className="py-16 sm:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              Real Students · Real Results
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-primary-900">
+              What Students Say About
+              <span className="text-saffron-600"> Pantnagar Pathshala</span>
+            </h2>
+            <p className="mt-3 text-gray-500 font-body max-w-xl mx-auto">
+              Hundreds of students have benefited from our resources and mock tests
+            </p>
+          </div>
+
+          {/* Featured YouTube video */}
+          <div className="max-w-2xl mx-auto mb-12">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/zL4xXzZuVww"
+                  title="Student Paper Response — Pantnagar Pathshala"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+            <p className="text-center text-sm text-gray-500 font-body mt-3">
+              🎬 Students share their paper experience &amp; results
+            </p>
+          </div>
+
+          {/* Screenshot gallery */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+            {testimonials.map((filename, i) => (
+              <div
+                key={filename}
+                className="break-inside-avoid glass-card rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-fade-in-up"
+                style={{ animationDelay: `${i * 60}ms` }}
+              >
+                <Image
+                  src={`/testimonials/${filename}`}
+                  alt={`Student testimonial ${i + 1}`}
+                  width={600}
+                  height={300}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 3: MOCK TESTS ─────────────────────────────────── */}
       <section className="py-16 sm:py-24 bg-gradient-to-br from-primary-950 via-primary-900 to-emerald-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
@@ -396,60 +451,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 5: TESTIMONIALS ───────────────────────────────── */}
-      <section className="py-16 sm:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-              Real Students · Real Results
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-primary-900">
-              What Students Say About
-              <span className="text-saffron-600"> Pantnagar Pathshala</span>
-            </h2>
-            <p className="mt-3 text-gray-500 font-body max-w-xl mx-auto">
-              Hundreds of students have benefited from our resources and mock tests
-            </p>
-          </div>
 
-          {/* Featured YouTube video */}
-          <div className="max-w-2xl mx-auto mb-12">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
-              <div className="aspect-video">
-                <iframe
-                  src="https://www.youtube.com/embed/zL4xXzZuVww"
-                  title="Student Paper Response — Pantnagar Pathshala"
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-            <p className="text-center text-sm text-gray-500 font-body mt-3">
-              🎬 Students share their paper experience & results
-            </p>
-          </div>
-
-          {/* Screenshot gallery — scrollable grid */}
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-            {testimonials.map((filename, i) => (
-              <div
-                key={filename}
-                className="break-inside-avoid glass-card rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${i * 60}ms` }}
-              >
-                <Image
-                  src={`/testimonials/${filename}`}
-                  alt={`Student testimonial ${i + 1}`}
-                  width={600}
-                  height={300}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── SECTION 6: YOUTUBE HUB ────────────────────────────────── */}
       <section className="py-16 sm:py-24 bg-white">
