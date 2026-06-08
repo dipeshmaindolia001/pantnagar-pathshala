@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   description:
     "Pantnagar Pathshala is your complete companion for Pantnagar University (GBPUAT) entrance exam preparation. Free resources, mock tests, mentorship, and YouTube lectures — all in one place.",
   keywords: "Pantnagar Pathshala, Pantnagar University, GBPUAT entrance exam, mock test, PCB, PCM, free resources, mentorship",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

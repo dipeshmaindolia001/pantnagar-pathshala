@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Green background circle -->
+  <rect width="32" height="32" rx="8" fill="#14532d"/>
+
+  <!-- Sprout stem -->
+  <path d="M16 26 L16 14" stroke="#4ade80" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Left leaf -->
+  <path d="M16 18 C16 18 10 17 9 11 C9 11 15 10 16 18Z" fill="#22c55e"/>
+
+  <!-- Right leaf -->
+  <path d="M16 14 C16 14 22 13 23 7 C23 7 17 6 16 14Z" fill="#4ade80"/>
+
+  <!-- Small soil bump -->
+  <ellipse cx="16" cy="26.5" rx="5" ry="1.5" fill="#166534" opacity="0.6"/>
+</svg>
