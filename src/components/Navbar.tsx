@@ -36,7 +36,7 @@ export default function Navbar() {
                   📚 Free Resources
                 </Link>
                 <Link
-                  href="/pay"
+                  href="/mocktest"
                   className="px-4 py-2 rounded-lg text-sm font-semibold text-primary-800 hover:bg-primary-50 transition-colors duration-200"
                 >
                   📝 Mock Tests
@@ -116,7 +116,7 @@ export default function Navbar() {
                 📚 Free Resources
               </Link>
               <Link
-                href="/pay"
+                href="/mocktest"
                 onClick={() => setMobileOpen(false)}
                 className="block w-full text-center px-4 py-2.5 rounded-lg text-sm font-semibold text-primary-900 border border-primary-800 hover:bg-primary-50 transition-colors"
               >
