@@ -103,7 +103,7 @@ export default async function DashboardPage() {
                   <div className="absolute top-0 right-0 w-20 h-20 bg-primary-50 rounded-bl-full opacity-35" />
                   <h4 className="font-extrabold text-lg text-primary-900 mb-1">PCB Group</h4>
                   <p className="text-xs text-gray-500 mb-4 font-body">Physics, Chemistry, Biology</p>
-                  <div className="text-2xl font-bold text-saffron-600 mb-4">₹50</div>
+                  <div className="text-2xl font-bold text-saffron-600 mb-4">₹100</div>
                   <Link
                     href="/pay?group=PCB"
                     className="block w-full py-2.5 bg-primary-700 hover:bg-primary-800 text-white rounded-xl text-center text-xs font-bold transition-all shadow-sm"
@@ -116,7 +116,7 @@ export default async function DashboardPage() {
                   <div className="absolute top-0 right-0 w-20 h-20 bg-saffron-50 rounded-bl-full opacity-35" />
                   <h4 className="font-extrabold text-lg text-primary-900 mb-1">PCM Group</h4>
                   <p className="text-xs text-gray-500 mb-4 font-body">Physics, Chemistry, Mathematics</p>
-                  <div className="text-2xl font-bold text-saffron-600 mb-4">₹50</div>
+                  <div className="text-2xl font-bold text-saffron-600 mb-4">₹100</div>
                   <Link
                     href="/pay?group=PCM"
                     className="block w-full py-2.5 bg-saffron-600 hover:bg-saffron-700 text-white rounded-xl text-center text-xs font-bold transition-all shadow-sm"
@@ -137,7 +137,7 @@ export default async function DashboardPage() {
                   <div className="absolute top-0 right-0 w-16 h-16 bg-emerald-50 rounded-bl-full opacity-30" />
                   <h4 className="font-extrabold text-base text-primary-900 mb-1">🌿 Biology</h4>
                   <p className="text-[11px] text-gray-500 mb-3 font-body">5 Biology Mock Tests</p>
-                  <div className="text-xl font-bold text-saffron-600 mb-3">₹50</div>
+                  <div className="text-xl font-bold text-saffron-600 mb-3">₹100</div>
                   <Link
                     href="/pay?group=Biology"
                     className="block w-full py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-center text-xs font-bold transition-all shadow-sm"
@@ -150,7 +150,7 @@ export default async function DashboardPage() {
                   <div className="absolute top-0 right-0 w-16 h-16 bg-purple-50 rounded-bl-full opacity-30" />
                   <h4 className="font-extrabold text-base text-primary-900 mb-1">🧪 Chemistry</h4>
                   <p className="text-[11px] text-gray-500 mb-3 font-body">5 Chemistry Mock Tests</p>
-                  <div className="text-xl font-bold text-saffron-600 mb-3">₹50</div>
+                  <div className="text-xl font-bold text-saffron-600 mb-3">₹100</div>
                   <Link
                     href="/pay?group=Chemistry"
                     className="block w-full py-2 bg-purple-700 hover:bg-purple-800 text-white rounded-xl text-center text-xs font-bold transition-all shadow-sm"
@@ -163,7 +163,7 @@ export default async function DashboardPage() {
                   <div className="absolute top-0 right-0 w-16 h-16 bg-orange-50 rounded-bl-full opacity-30" />
                   <h4 className="font-extrabold text-base text-primary-900 mb-1">⚡ Physics</h4>
                   <p className="text-[11px] text-gray-500 mb-3 font-body">5 Physics Mock Tests</p>
-                  <div className="text-xl font-bold text-saffron-600 mb-3">₹50</div>
+                  <div className="text-xl font-bold text-saffron-600 mb-3">₹100</div>
                   <Link
                     href="/pay?group=Physics"
                     className="block w-full py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-xl text-center text-xs font-bold transition-all shadow-sm"
@@ -251,19 +251,19 @@ export default async function DashboardPage() {
               <p className="text-xs text-gray-500 font-body mb-3">Preparing for another subject or stream?</p>
               <div className="flex flex-wrap gap-2.5">
                 {pcbStatus === "none" && (
-                  <Link href="/pay?group=PCB" className="text-xs text-primary-700 hover:text-primary-900 border border-primary-600 px-3 py-1.5 rounded-lg font-bold">Buy PCB (₹50)</Link>
+                  <Link href="/pay?group=PCB" className="text-xs text-primary-700 hover:text-primary-900 border border-primary-600 px-3 py-1.5 rounded-lg font-bold">Buy PCB (₹100)</Link>
                 )}
                 {pcmStatus === "none" && (
-                  <Link href="/pay?group=PCM" className="text-xs text-saffron-700 hover:text-saffron-900 border border-saffron-600 px-3 py-1.5 rounded-lg font-bold">Buy PCM (₹50)</Link>
+                  <Link href="/pay?group=PCM" className="text-xs text-saffron-700 hover:text-saffron-900 border border-saffron-600 px-3 py-1.5 rounded-lg font-bold">Buy PCM (₹100)</Link>
                 )}
                 {bioStatus === "none" && (
-                  <Link href="/pay?group=Biology" className="text-xs text-emerald-700 hover:text-emerald-900 border border-emerald-600 px-3 py-1.5 rounded-lg font-bold">Buy Biology (₹50)</Link>
+                  <Link href="/pay?group=Biology" className="text-xs text-emerald-700 hover:text-emerald-900 border border-emerald-600 px-3 py-1.5 rounded-lg font-bold">Buy Biology (₹100)</Link>
                 )}
                 {chemStatus === "none" && (
-                  <Link href="/pay?group=Chemistry" className="text-xs text-purple-700 hover:text-purple-900 border border-purple-600 px-3 py-1.5 rounded-lg font-bold">Buy Chemistry (₹50)</Link>
+                  <Link href="/pay?group=Chemistry" className="text-xs text-purple-700 hover:text-purple-900 border border-purple-600 px-3 py-1.5 rounded-lg font-bold">Buy Chemistry (₹100)</Link>
                 )}
                 {phyStatus === "none" && (
-                  <Link href="/pay?group=Physics" className="text-xs text-orange-700 hover:text-orange-900 border border-orange-600 px-3 py-1.5 rounded-lg font-bold">Buy Physics (₹50)</Link>
+                  <Link href="/pay?group=Physics" className="text-xs text-orange-700 hover:text-orange-900 border border-orange-600 px-3 py-1.5 rounded-lg font-bold">Buy Physics (₹100)</Link>
                 )}
               </div>
             </div>
@@ -499,7 +499,7 @@ export default async function DashboardPage() {
                   href="/pay?group=PCB"
                   className="px-4 py-2 bg-primary-700 hover:bg-primary-800 text-white rounded-xl text-xs font-bold transition-all shadow-sm"
                 >
-                  Buy PCB (₹50)
+                  Buy PCB (₹100)
                 </Link>
               )}
               {pcmStatus === "none" && (
@@ -507,7 +507,7 @@ export default async function DashboardPage() {
                   href="/pay?group=PCM"
                   className="px-4 py-2 bg-saffron-600 hover:bg-saffron-700 text-white rounded-xl text-xs font-bold transition-all shadow-sm"
                 >
-                  Buy PCM (₹50)
+                  Buy PCM (₹100)
                 </Link>
               )}
               {bioStatus === "none" && (
@@ -515,7 +515,7 @@ export default async function DashboardPage() {
                   href="/pay?group=Biology"
                   className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold transition-all shadow-sm"
                 >
-                  Buy Biology (₹50)
+                  Buy Biology (₹100)
                 </Link>
               )}
               {chemStatus === "none" && (
@@ -523,7 +523,7 @@ export default async function DashboardPage() {
                   href="/pay?group=Chemistry"
                   className="px-4 py-2 bg-purple-700 hover:bg-purple-800 text-white rounded-xl text-xs font-bold transition-all shadow-sm"
                 >
-                  Buy Chemistry (₹50)
+                  Buy Chemistry (₹100)
                 </Link>
               )}
               {phyStatus === "none" && (
@@ -531,7 +531,7 @@ export default async function DashboardPage() {
                   href="/pay?group=Physics"
                   className="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-xl text-xs font-bold transition-all shadow-sm"
                 >
-                  Buy Physics (₹50)
+                  Buy Physics (₹100)
                 </Link>
               )}
             </div>

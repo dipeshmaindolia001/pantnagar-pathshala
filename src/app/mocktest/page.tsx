@@ -7,7 +7,7 @@ const combinedPackages = [
     stream: "Biology stream",
     desc: "Complete mock test package for Biology stream students.",
     features: ["Physics", "Chemistry", "Biology", "3 Full Mock Tests (200 MCQs each)", "3-Hour Time Limit (Real Exam Pattern)"],
-    price: 50,
+    price: 100,
     group: "PCB",
     color: "border-primary-200 hover:border-primary-400",
     badge: "bg-primary-700",
@@ -21,7 +21,7 @@ const combinedPackages = [
     stream: "Mathematics stream",
     desc: "Complete mock test package for Mathematics stream students.",
     features: ["Physics", "Chemistry", "Mathematics", "3 Full Mock Tests (200 MCQs each)", "3-Hour Time Limit (Real Exam Pattern)"],
-    price: 50,
+    price: 100,
     group: "PCM",
     color: "border-saffron-200 hover:border-saffron-400",
     badge: "bg-saffron-500",
@@ -37,7 +37,7 @@ const singlePackages = [
     emoji: "🌿",
     desc: "Targeted subject-wise mocks for Biology stream prep.",
     features: ["5 Full Subject Mock Tests", "100 MCQs per test", "1.5-Hour Timer (90 mins)"],
-    price: 50,
+    price: 100,
     group: "Biology",
     color: "border-green-200 hover:border-green-400",
     badge: "bg-green-600",
@@ -50,7 +50,7 @@ const singlePackages = [
     emoji: "🧪",
     desc: "Targeted subject-wise mocks for Chemistry prep.",
     features: ["5 Full Subject Mock Tests", "100 MCQs per test", "1.5-Hour Timer (90 mins)"],
-    price: 50,
+    price: 100,
     group: "Chemistry",
     color: "border-purple-200 hover:border-purple-400",
     badge: "bg-purple-600",
@@ -63,7 +63,7 @@ const singlePackages = [
     emoji: "⚡",
     desc: "Targeted subject-wise mocks for Physics prep.",
     features: ["5 Full Subject Mock Tests", "100 MCQs per test", "1.5-Hour Timer (90 mins)"],
-    price: 50,
+    price: 100,
     group: "Physics",
     color: "border-orange-200 hover:border-orange-400",
     badge: "bg-saffron-500",
@@ -75,7 +75,7 @@ const singlePackages = [
 
 const steps = [
   { icon: "👤", step: 1, title: "Sign Up", desc: "Create your free account in seconds" },
-  { icon: "💳", step: 2, title: "Pay via UPI", desc: "Quick ₹50 payment with any UPI app" },
+  { icon: "💳", step: 2, title: "Pay via UPI", desc: "Quick ₹100 payment with any UPI app" },
   { icon: "✅", step: 3, title: "Get Approved", desc: "Admin verifies your payment within hours" },
   { icon: "🎯", step: 4, title: "Take Tests", desc: "Attempt full mock tests at your pace" },
 ];
@@ -111,7 +111,7 @@ export default function MockTestPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold font-heading text-primary-900">
               Combined Stream Packages
             </h2>
-            <p className="text-saffron-600 font-semibold text-sm mt-1">₹50 after discount</p>
+            <p className="text-saffron-600 font-semibold text-sm mt-1">₹100 after discount</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -165,7 +165,7 @@ export default function MockTestPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold font-heading text-primary-900">
               Targeted Single Subject Packages
             </h2>
-            <p className="text-saffron-600 font-semibold text-sm mt-1">₹50 after discount</p>
+            <p className="text-saffron-600 font-semibold text-sm mt-1">₹100 after discount</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">

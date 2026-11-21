@@ -21,7 +21,7 @@ function PaymentForm() {
   const [error, setError] = useState('');
 
   const isSingleSubject = ['Biology', 'Chemistry', 'Physics'].includes(groupName);
-  const price = 50;
+  const price = 100;
 
   const upiId = process.env.NEXT_PUBLIC_UPI_ID || 'dipeshmaindolia@oksbi';
 
@@ -210,11 +210,11 @@ function PaymentForm() {
                   onChange={(e) => setGroupName(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-primary-500 focus:ring-0 outline-none text-sm font-body transition-colors duration-200 bg-white cursor-pointer"
                 >
-                  <option value="PCB">PCB — Physics, Chemistry, Biology (₹50)</option>
-                  <option value="PCM">PCM — Physics, Chemistry, Mathematics (₹50)</option>
-                  <option value="Biology">Biology Subject Mock Package — 5 Mocks (₹50)</option>
-                  <option value="Chemistry">Chemistry Subject Mock Package — 5 Mocks (₹50)</option>
-                  <option value="Physics">Physics Subject Mock Package — 5 Mocks (₹50)</option>
+                  <option value="PCB">PCB — Physics, Chemistry, Biology (₹100)</option>
+                  <option value="PCM">PCM — Physics, Chemistry, Mathematics (₹100)</option>
+                  <option value="Biology">Biology Subject Mock Package — 5 Mocks (₹100)</option>
+                  <option value="Chemistry">Chemistry Subject Mock Package — 5 Mocks (₹100)</option>
+                  <option value="Physics">Physics Subject Mock Package — 5 Mocks (₹100)</option>
                 </select>
               </div>
 
